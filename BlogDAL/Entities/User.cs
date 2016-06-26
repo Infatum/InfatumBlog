@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Entities
 {
-    class User
+    public class User : BaseRepository
     {
     }
 }

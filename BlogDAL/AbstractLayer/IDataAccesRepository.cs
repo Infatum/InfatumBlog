@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using DataAccessLayer.ConcreteLayer;
 using DataAccessLayer.Entities.Abstract;
 
 namespace DataAccessLayer.AbstractLayer

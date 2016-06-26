@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,17 +41,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractLayer\AbstractTableIdentifier.cs" />
     <Compile Include="AbstractLayer\DBConnector.cs" />
+    <Compile Include="AbstractLayer\IAuthorizationRepository.cs" />
+    <Compile Include="AbstractLayer\IBlogUserRepository.cs" />
     <Compile Include="AbstractLayer\IDataAccesRepository.cs" />
-    <Compile Include="AbstractLayer\IDataTable.cs" />
-    <Compile Include="ConcreteLayer\BaseEntity.cs" />
+    <Compile Include="AbstractLayer\ITransactionManager.cs" />
+    <Compile Include="AbstractLayer\IUserCommentRepository.cs" />
+    <Compile Include="ConcreteLayer\SqlParameters.cs" />
+    <Compile Include="ConcreteLayer\SqlTransactionManager.cs" />
+    <Compile Include="Entities\Abstract\BaseEntity.cs" />
+    <Compile Include="Entities\AuthorizedComment.cs" />
+    <Compile Include="ConcreteLayer\BaseRepository.cs" />
     <Compile Include="ConcreteLayer\MSSQLConnector.cs" />
     <Compile Include="Entities\Administrator.cs" />
+    <Compile Include="Entities\BlogUser.cs" />
     <Compile Include="Entities\Comment.cs" />
-    <Compile Include="Entities\Post.cs" />
+    <Compile Include="Entities\BlogPost.cs" />
     <Compile Include="Entities\PostTag.cs" />
-    <Compile Include="Entities\PostTags.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

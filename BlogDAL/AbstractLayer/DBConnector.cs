@@ -6,7 +6,8 @@
         public abstract void OpenConnection();
         public abstract void CloseConnection();
 
-        public DBConnector(string connectionString)
+        protected DBConnector() { }
+        protected DBConnector(string connectionString)
         {
             ConnectionString = connectionString;
         }
